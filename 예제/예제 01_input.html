@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제01_input</title>
+</head>
+<body>
+    <form>
+        <h2>회원가입</h2>
+        <span>
+            <label for="id">아이디</label>
+            <input type="text" id="id" required>
+        </span><br>
+        <span>
+            <label for="name">이름</label>
+            <input type="text" id="name" required>
+        </span><br>
+        <span>
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw" required>
+        </span><br>
+        <span>
+            <label for="pwc">비밀번호확인</label>
+            <input type="password" id="pwc" required>
+        </span><br>
+        <span>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" placeholder="010-1234-1234" required>
+        </span><br>
+        <span>
+            <label for="email">이메일</label>
+            <input type="text" id="email" required>
+            @
+            <select id="email">
+                <option value="직접입력">직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="gmail.com">gmail.com</option>
+            </select>
+        </span><br>
+        <span>
+            문자수신여부
+            <input type="checkbox" value="예" name="message"> 예
+            <input type="checkbox" value="아니오" name="message"> 아니오
+        </span><br>
+        <span>
+            가입경로
+            <input type="radio" value="친구소개" name="route">친구소개
+            <input type="radio" value="인터넷 검색" name="route">인터넷 검색
+            <input type="radio" value="블로그" name="route"> 블로그
+            <input type="radio" value="기타" name="route"> 기타
+        </span><br>
+        <span>
+            <input type="submit" value="확인" required>
+        </span>
+    </form>
+    <h2>전화번호 입력</h2>
+    <form>
+        <span>
+            <label for="name2">이름:</label>
+            <input type="text" id="name2" required>
+        </span><br>
+        <span>
+            <label for="tel2">전화번호:</label>
+            <input type="tel" id="tel2" required>
+        </span><br>
+        <span>
+            <input type="submit" value="저장하기">
+            <input type="button" value="중복확인">
+            <input type="reset" value="다시쓰기">
+        </span><br>
+    </form>
+</body>
+</html>

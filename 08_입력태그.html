@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력태그</title>
+</head>
+<body>
+    <h1>입력태그 input</h1>
+    <p>input 태그는 type 속성에 따라 다양한 폼을 생성.</p>
+    <p>placeholder라는 속성에 값을 입력하면 input 박스 안에 입력내용에 대한 힌트(?)가 나타남.</p>
+    <br>
+    <ol>
+        <li>
+            <h2>text</h2>
+            <input type="text" placeholder="힌트? 그게 뭐임??">
+        </li>
+        <li>
+            <h2>password</h2>
+            <input type="password" placeholder="비밀번호 입력하는 자리">
+        </li>
+        <li>
+            <h2>search</h2>
+            <input type="search" placeholder="검색어 넣는 자리">
+        </li>
+        <li>
+            <h2>email</h2>
+            <input type="email" placeholder="이메일 넣는 자리">
+        </li>
+        <li>
+            <h2>tel</h2>
+            <input type="tel" placeholder="전화번호 넣는 자리">
+        </li>
+        <li>
+            <h2>color</h2>
+            <input type="color">
+        </li>
+        <li>
+            <h2>number</h2>
+            <input type="number" min="0" max="100" value="50">
+        </li>
+        <li>
+            <h2>range</h2>
+            <input type="range" min="0" max="100" value="30">
+        </li>
+    </ol>
+    <br>
+    <ol>
+        <li>
+            <h2>checkbox</h2>
+            <div>
+                매우 그렇다<input type="checkbox" value="메우 그렇다" name="YoN">
+                그렇다<input type="checkbox" value="그렇다" name="YoN">
+                보통<input type="checkbox" value="보통" name="YoN">
+                그렇지 않다<input type="checkbox" value="그렇지 않다" name="YoN">
+                매우 그렇지 않다<input type="checkbox" value="메우 그렇지 않다" name="YoN">
+            </div>
+        </li>
+        <li>
+            <h2>radio</h2>
+            <div>
+                매우 그렇다<input type="radio" value="매우 그렇다" name="YN">
+                그렇다<input type="radio" value="그렇다" name="YN">
+                보통<input type="radio" value="보통" name="YN">
+                그렇지 않다<input type="radio" value="그렇지 않다" name="YN">
+                매우 그렇지 않다<input type="radio" value="매우 그렇지 않다" name="YN">
+            </div>
+        </li>
+        <li>
+            <h2>checkbox와 radio의 특징</h2>
+            <p>checkbox는 다중 선택이 가능하다.</p>
+            <p>radio는 다중 선택이 불가능하다.</p>
+            <p>name 값에는 카테고리가 입력된다. 한가지 질문에서의 카테고리는 같이 사용될 수 있으나, 질문이 다를 경우 동일한 카테고리를 사용하면 안된다.</p>
+            <p>checked라는 속성을 넣으면 체크된 상태로 보여진다.</p>
+        </li>
+    </ol>
+    <br>
+    <ol>
+        <li>
+            <h2>submit</h2>
+            <input type="submit" value="누르는 버튼">
+        </li>
+        <li>
+            <h2>button</h2>
+            <input type="button" value="p태그 안에 input 태그의 type button">
+            <button>button 단독 태그</button>
+        </li>
+        <li>
+            <h2>reset</h2>
+            <input type="reset" value="리셋버튼">
+        </li>
+        <li>
+            <h2>file</h2>
+            <input type="file" value="파일 선택">
+        </li>
+         <li>
+             <h2>date</h2>
+             <input type="date">
+         </li>
+    </ol>
+    <br><br><br><br>
+    <form>
+        <p>form태그는 입력 양식을 만들기 위한 태그. 입력 양식에 사용되는 태그들은 모두 form 태그 안데 작성하면 됨.</p>
+        <div>
+            아이디 <input type="text" placeholder="아이디"><br>
+            비밀번호 <input type="password" placeholder="비밀번호"><br>
+            <input type="submit" value="로그인">
+        </div>
+    </form>
+    <h2>label / required</h2>
+    <p>label: label은 속성이 아니라 태그, 입력태그들에 대한 제목을 정의하는 태그</p>
+    <p>required: 항목에 내용이 비었을 경우에 경고 메세지를 표시하는 속성</p>
+    <form>
+        <label for="id">아이디</label>
+        <input type="text" id="id" required><br>
+        <label for="pw">비밀번호</label>
+        <input type="password" id="pw" required><br>
+        <input type="submit" value="로그인">
+    </form>
+    <h2>textarea</h2>
+    <p>textarea 태그는 여러줄의 글을 입력할 수 있는 텍스트 상자 입니다. textarea 태그는 인라인 요소.</p>
+    <textarea cols="30" rows="10"></textarea>
+</body>
+</html>
